@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Fiorello_website.Data;
+using Fiorello_website.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +10,18 @@ namespace Fiorello_website.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly AppDbContext _context;
+
+        public HomeController(AppDbContext context)
         {
-            return View();
+            _context = context;
+            
+        }
+        public async Task <IActionResult> Index()
+        {
+            List<Slider> sliders = _context.Sliders.ToList();
+
+            return View(sliders);
         }
     }
 }
