@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Fiorello_website.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,6 @@ namespace Fiorello_website.Data
 
         }
 
+        public DbSet<Slider> Sliders { get; set; }
     }
 }
