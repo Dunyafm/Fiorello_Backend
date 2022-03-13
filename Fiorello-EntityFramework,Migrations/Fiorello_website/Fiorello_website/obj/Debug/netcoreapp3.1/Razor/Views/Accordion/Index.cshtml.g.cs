@@ -26,8 +26,15 @@ using Fiorello_website.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\ASUS\Desktop\Fiorello_Backend\Fiorello-EntityFramework,Migrations\Fiorello_website\Fiorello_website\Views\_ViewImports.cshtml"
+using Fiorello_website.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"83b2853991c56c47a058721fc128d38bff4a0407", @"/Views/Accordion/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5f04a23f0d1aed02e16d8c17c1b0acd1fd01d3ba", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"45c8a3392a6794beff3ab8f88bbfe6f506b641c3", @"/Views/_ViewImports.cshtml")]
     public class Views_Accordion_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

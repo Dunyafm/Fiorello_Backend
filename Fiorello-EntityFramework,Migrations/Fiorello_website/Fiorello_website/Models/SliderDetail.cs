@@ -5,11 +5,12 @@ using System.Threading.Tasks;
 
 namespace Fiorello_website.Models
 {
-    public class Slider
+    public class SliderDetail
     {
         public int Id { get; set; }
+        public string Header { get; set; }
+        public string Description { get; set; }
         public string Image { get; set; }
-        public string  Desc { get; set; }
-    
+
     }
 }

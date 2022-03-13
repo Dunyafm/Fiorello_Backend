@@ -16,5 +16,6 @@ namespace Fiorello_website.Data
         }
 
         public DbSet<Slider> Sliders { get; set; }
+        public DbSet<SliderDetail> SliderDetails { get; set; }
     }
 }
