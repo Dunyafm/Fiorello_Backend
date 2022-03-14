@@ -23,10 +23,18 @@ namespace Fiorello_website.Controllers
         {
             List<Slider> sliders = await _context.Sliders.ToListAsync();
             SliderDetail detail = await _context.SliderDetails.FirstOrDefaultAsync();
-            HomeVm HomeVM = new HomeVm
+            List<Catergory> catergories = await _context.Catergories.ToListAsync();
+            List<Product> products = await _context.Products
+                .Include(m => m.Catergory)
+                .Include(m => m.Images)
+                .ToListAsync();
+
+            HomeVM HomeVM = new HomeVM
             {
                 Sliders = sliders,
-                Detail = detail
+                Detail = detail,
+                Categories = catergories,
+                Products = products
             };
 
 

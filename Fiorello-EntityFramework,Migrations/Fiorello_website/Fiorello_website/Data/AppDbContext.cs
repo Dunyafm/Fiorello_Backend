@@ -17,5 +17,8 @@ namespace Fiorello_website.Data
 
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<SliderDetail> SliderDetails { get; set; }
+         public DbSet<Product> Products { get; set; }
+        public DbSet<Catergory> Catergories { get; set; }
+        public DbSet<ProductImage> ProductImages { get; set; }
     }
 }

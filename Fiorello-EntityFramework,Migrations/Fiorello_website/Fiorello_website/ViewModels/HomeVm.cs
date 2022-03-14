@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Fiorello_website.ViewModels
 {
-    public class HomeVm
+    public class HomeVM
     {
         public List<Slider> Sliders{ get; set; }
+        public List<Catergory> Categories { get; set; }
+        public List<Product> Products { get; set; }
         public SliderDetail Detail { get; set; }
     }
 }

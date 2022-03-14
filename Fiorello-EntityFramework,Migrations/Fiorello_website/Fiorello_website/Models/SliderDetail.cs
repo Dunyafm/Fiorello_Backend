@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Fiorello_website.Models
 {
-    public class SliderDetail
+    public class SliderDetail 
     {
         public int Id { get; set; }
         public string Header { get; set; }
